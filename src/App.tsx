@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route , Routes} from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import MainPage from "./pages/MainPage";
+import BoardsPage from "./pages/BoardsPage";
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
                 {/*<Route element={<PrivateRoutes />}>*/}
                 {/*    <Route element={<AdminPanel {...props}/>} path="/" exact/>*/}
                 {/*</Route>*/}
-                <Route path="/" element={<MainPage/>} />
+                <Route path="/" element={<BoardsPage/>} />
                 <Route path="/login" element={<LoginPage/>} />
                 <Route path="/register" element={<RegistrationPage/>} />
             </Routes>

@@ -20,7 +20,6 @@ function LoginPage() {
                     password,
                 }),
             })
-
             const data = await response.json()
             if(response.ok) {
                 console.log(data.token)
